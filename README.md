@@ -32,4 +32,4 @@ Componente de cartão para previsão do tempo para Angular 2+.
 ### Notas de customização
 1. O nome dos arquivos das ilustrações dos monumentos da cidade, são os IDs da localidade (atributo **locationId**);
 2. Os ícones de tempo são da **Font Awesome** e no arquivo **weather-card.component.ts** tem o atributo **translateStateToIcon**, onde você pode mapear o atributo **stateAbbr** para seus ícones correspondentes;
-3. As cores de fundo dos cartões são variáveis de acordo com a previsão, as classes de html que controlam isso são formadas da seguinte forma: **bg-{stateAbbr}**. Exemplo: Um dia com neve tem o valor do **stateAbbr** de **sn**, logo a classe de html que controla o fundo de neve será **bg-sn**. Você pode alterar as classes de fundo no arquivo **weather-card.component.scss**.; 
+3. As cores de fundo dos cartões são variáveis de acordo com a previsão, as classes de html que controlam isso são formadas da seguinte forma: **bg-{stateAbbr}**. Exemplo: Um dia com neve tem o valor do **stateAbbr** de **sn**, logo a classe de html que controla o fundo de neve será **bg-sn**. Você pode alterar as classes de fundo no arquivo **weather-card.component.scss**; 

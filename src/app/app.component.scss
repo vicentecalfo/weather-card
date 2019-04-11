@@ -1,0 +1,12 @@
+.example-cards{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 40px;
+    padding: 40px;
+    width:100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,38 @@
+<div class="ez-weather-card bg-{{ stateAbbr }} elevation">
+  <div class="location"
+       [style.background-image]="'url(/assets/images/'+ locationId +'.svg)'">
+    <div class="content">
+      <span>
+        {{ temp | number: '1.0-0' }}<sup>o</sup>
+      </span>
+    </div>
+    <div class="separator">
+      <svg viewBox="0 -20 700 110"
+           preserveAspectRatio="none">
+        <path transform="translate(0, -20)"
+              d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
+              fill="#ffffff"
+              opacity="0.5" />
+        <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z"
+              fill="#ffffff" />
+      </svg>
+    </div>
+  </div>
+  <div class="info">
+    <h1>{{ location }}</h1>
+    <span>{{ date | amCalendar }}</span>
+    <div class="weather">
+      <div>
+        <span class="name">{{ state }}</span>
+        <span class="temp">
+          <i class="fas fa-chevron-down icon-min"></i>{{ minTemp | number: '1.0-0' }}<sup>o</sup>
+          &nbsp;
+          <i class="fas fa-chevron-up icon-up"></i>{{ maxTemp | number: '1.0-0' }}<sup>o</sup>
+        </span>
+      </div>
+      <div>
+        <i class="{{translateStateToIcon[stateAbbr]}}"></i>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<ul class="example-cards">
+    <li *ngFor="let city of locations">
+        <ez-weather-card 
+            temp="{{ city.the_temp }}"
+            minTemp="{{city.min_temp}}"
+            maxTemp="{{city.max_temp}}"
+            locationId = "{{ city.woeid }}"
+            stateAbbr = "{{ city.weather_state_abbr }}"
+            state="{{ city.weather_state_name }}"
+            location = "{{ city.title }}"
+            date="{{ city.created }}"
+            ></ez-weather-card>
+    </li>
+</ul>
+
+
